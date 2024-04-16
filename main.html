@@ -2,110 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Luxe Cuisine</title>
+    <link rel = "stylesheet" href = "./styles.css"/>
 </head>
 <body>
-    <header class="order-form-header">
-        <h1>
-            <img src="./images/logo1.png" alt=""> Luxe Cuisine
-        </h1>
-        <h3>The best restaurant in town.</h3>
-        <p>
-            <em>
-                <b>Where Every Bite Transcends Taste into Artistry.</b>
-            </em>
-        </p>
-        <p>
-            <em>
-                Indulge in an unparalleled dining experience at Luxe Cuisine, 
-                where culinary mastery meets refined elegance. Our expert chefs 
-                meticulously craft each dish to perfection, blending exquisite flavors 
-                and premium ingredients to tantalize your senses. Whether you're 
-                savoring our signature tasting menu or exploring our à la carte offerings, 
-                every bite is a celebration of gastronomic excellence. Immerse yourself in 
-                an ambiance of luxury and sophistication as you embark on a journey of 
-                culinary delight at Luxe Cuisine.
-            </em>
-        </p>
-    </header>
-    <form id="orderForm" action="" method="get" class="order-form">
-    <h1>Order Form</h1>
-        <div class="form-row">
-            <label for="full-name">Name: </label>
-            <input id="full-name" name="full-name" type="text">
-        </div>
-        <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="your_email@example.com" />
-        </div>
-        <div class="form-row">
-            <label for="age">Age</label>
-            <input id="age" name="age" type="text">
-        </div>
-        <fieldset class="legacy-form-row">
-          <legend>Would you like to?</legend>
-          <div class="form-radio">
-              <input id="talk-type-1" name="talk-type" type="radio" value="main stage"/>
-              <label for="talk-type-1" class="radio-label">Dine-In</label>
-          </div>
-          <div class="form-radio">
-              <input id="talk-type-2" name="talk-type" type="radio" value="Workshop"/>
-              <label for="talk-type-2" class="radio-label">Take-Out</label>
-          </div>
-      </fieldset>
-        <div class="form-row">
-          <label for="type-of-cuisine">Type of Cuisine</label>
-        <div id="dropdown">
-            <button class="dropdown-toggle">
-                <span>Menu</span>
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <ul class="menu">
-                <li class="menu-item"><a href="#">Italian</a></li>
-                <li class="menu-item"><a href="#">Chinese</a></li>
-                <li class="menu-item dropdown">
-                    <a href="#" class="submenu-toggle">
-                        <span>Healthy Options</span>
-                        <i class="fas fa-caret-down"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a href="#">Vegetarian</a></li>
-                    </ul> 
-                </li>
-                <li class="menu-item"><a href="#">Mexican</a></li>
-                <li class="menu-item dropdown">
-                    <a href="#" class="submenu-toggle">
-                        <span>Specials</span>
-                        <i class="fa-solid fa-caret-right"></i>
-                    </a>
-                    <ul class="submenu">
-                      <li class="submenu-item"><a href="#">Dessert</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+  <!--Form-->
+  <header class="speaker-form-header">
+    <img src = "./images/logo1.png" class = "logo" alt = "logo"/>
+    <h1 class="h1">Luxe Cuisine</h1>
+    <h3>The best restaurant in town.</h3>
+    <p><em>Indulge in an unparalleled dining experience at Luxe Cuisine, 
+        where culinary mastery meets refined elegance. Our expert chefs 
+        meticulously craft each dish to perfection, blending exquisite flavors 
+        and premium ingredients to tantalize your senses. Whether you're 
+        savoring our signature tasting menu or exploring our à la carte offerings, 
+        every bite is a celebration of gastronomic excellence. Immerse yourself in 
+        an ambiance of luxury and sophistication as you embark on a journey of 
+        culinary delight at Luxe Cuisine.</em></p>
+</header>
+
+<form action="" method="get" class="speaker-form">
+  <!--Name, Age, Email-->
+    <div class="form-row">
+        <label for="full-name">Name: </label>
+        <input type="text" id="full-name" name="full-name" autocomplete="off" required>
+    </div>
+    <div class="form-row">
+      <label for="age">Age: </label>
+      <input type="text" id="age" name="age" autocomplete="off">
+    </div>
+    <div class="form-row">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="your_email@example.com" autocomplete="off">
+    </div>
+  <!--Type of Cuisine and Menu-->
+    <div class="form-row">
+      <legend>Type of Cuisine:</legend>
+      <div id = "dropdown">
+        <button class = "dropdown-toggle">
+          <span>Menu</span>
+        </button>
+
+          <ul class = "menu">
+            <li class = "menu-item"><a href = "#">Italian</a></li>
+            <li class = "menu-item"><a href = "#">Chinese</a></li>
+            <li class = "menu-item dropdown">
+              <a href = "#" class = "submenu-toggle">
+                <span>Healthy Options</span>
+              </a>
+              <ul class = "submenu">
+                <li class = "submenu-item"><a href = "#">Vegetarian</a></li>
+              </ul>
+            </li>
+
+            <li class = "menu-item"><a href = "#">Vietnamese</a></li>
+            <li class = "menu-item dropdown">
+              <a href = "#" class = "submenu-toggle">
+                <span>Specials</span>
+              </a>
+              <ul class = "submenu">
+                <li class = "submenu-item"><a href = "#">Cannoli Celesti </a></li>
+                <li class = "submenu-item"><a href = "#">Velvet Sweets</a></li>
+                <li class = "submenu-item"><a href = "#">Sogni di Cioccolato</a></li>
+                <li class = "submenu-item"><a href = "#">Fragole Fiammeggianti </a></li>
+              </ul>
+            </li>
+          </ul>
       </div>
-        <div class="form-row">
-            <label for="t-shirt">Mode of payment</label>
-            <select id="t-shirt" name="t-shirt">
-                <option value="cs">Cash</option>
-                <option value="cc">Credit Card</option>
-                <option value="op">Online Payment</option>
-                <option value="ch">Cheque</option>
-            </select>
-        </div>
-        <div class="form-row">
-            <label for="abstract">Comment</label>
-            <textarea id="abstract" name="abstract"></textarea>
-            <div class="instructions"><em>Write here your comment and additional instructions.</em></div>
-        </div>
-        <div class="form-group">
-          <button type="submit">Place Order</button>
-          <button type="button" onclick="cancelOrder()">Cancel</button>
-        </div>
-    </form>
-    <script src="script.js"></script>
+    </div>
+  <!--Cash or Card-->
+  <div class="form-row">
+    <label for="t-shirt">Mode of payment</label>
+    <select id="t-shirt" name="t-shirt">
+        <option value="cs">Cash</option>
+        <option value="cc">Credit Card</option>
+        <option value="op">Online Payment</option>
+        <option value="ch">Cheque</option>
+    </select>
+</div>
+  <!--Dine-in or Take-out-->
+    <fieldset class = 'legacy-form-row'>
+      <legend>Would you like to?</legend>
+
+      <input id = 'eat-type-1' name = 'eat-type' type = 'radio' value = 'dine-in' checked/>
+      <label for = 'eat-type-1' class = 'radio-label'>Dine-in</label>
+
+      <input id = 'eat-type-2' name = 'eat-type' type = 'radio' value = 'take-out' />
+      <label for = 'eat-type-2' class = 'radio-label'>Take-out</label>
+    </fieldset>
+  <!---->
+    <div class="form-row">
+        <label for="abstract">Food Review:</label>
+        <textarea id="abstract" name="abstract"></textarea>
+        <div class="instructions"><em>Write here your comment and additional instructions.</em></div>
+    </div>
+    <!-- Place Order and Cancel Button -->
+    <div class = "group-button">
+      <button class = "order button">Place Order</button>
+      <button class = "cancel button">Cancel</button>
+    </div>
+</form>
+  <script src="./script.js"></script>
 </body>
 </html>
